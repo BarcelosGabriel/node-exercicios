@@ -14,4 +14,3 @@ const result = checkoddeven(number)
 console.log(`the number ${number} is ${result}.`)
 
 rl.close()
-
