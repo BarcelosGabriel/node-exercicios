@@ -4,9 +4,9 @@ const rl = readline.createInterface({ input, output })
 
 function checkoddeven(number) {
     if (number % 2 === 0) {
-        return "par"
+        return "pair"
     } else {
-        return "ímpar"
+        return "odd"
     }
 }
 const number = parseFloat(await rl.question("enter the number: \n"))
