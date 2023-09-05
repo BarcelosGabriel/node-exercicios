@@ -23,3 +23,5 @@ function bubbleSort(lista) {
 const minhaLista = [22, 34, 25, 12, 22, -1, 0];
 bubbleSort(minhaLista);
 console.log("Lista ordenada:", minhaLista);
+
+//
