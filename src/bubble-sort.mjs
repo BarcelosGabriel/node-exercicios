@@ -24,4 +24,5 @@ const minhaLista = [22, 34, 25, 12, 22, -1, 0];
 bubbleSort(minhaLista);
 console.log("Lista ordenada:", minhaLista);
 
-//
+// Bubble Sort é um algoritmo de ordenação que pode ser aplicado em Arrays e Listas dinâmicas
+// Bubble Sort is a sorting algorithm that can be applied to Arrays and Dynamic Lists

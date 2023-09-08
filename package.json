@@ -1,0 +1,20 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "Exercicios de node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/hello-world.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarcelosGabriel/node-exercicios.git"
+  },
+  "author": "Gabriel Barcelos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarcelosGabriel/node-exercicios/issues"
+  },
+  "homepage": "https://github.com/BarcelosGabriel/node-exercicios#readme"
+}

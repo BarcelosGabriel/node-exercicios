@@ -23,4 +23,5 @@ const array = [6, 3, 9, 1, 2, 7];
 const sortedArray = quickSort(array);
 console.log(sortedArray);
 
-// 
+// O Quicksort é o algoritmo mais eficiente na ordenação por comparação.
+// Quicksort is the most efficient algorithm for comparison sorting.
