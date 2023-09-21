@@ -1,6 +1,5 @@
 import * as readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
-
 const rl = readline.createInterface({ input, output })
 
 const calculando = {
@@ -18,9 +17,11 @@ function calculadora(operacao, a, b) {
     } else {
         return "Operação não suportada";
     }
+    
 }
 
-let oper = await rl.question('Qual operação deseja efetuar (+) (-) (*) (/) : \n');
+
+let oper = await rl.question("Qual operação deseja efetuar (+) (-) (*) (/) : \n");
 let num1 = parseFloat(await rl.question("Insira o primeiro numero: \n"));
 let num2 = parseFloat(await rl.question("Insira o segundo numero: \n"));
 

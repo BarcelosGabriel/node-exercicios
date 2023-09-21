@@ -3,7 +3,7 @@ import { stdin as input, stdout as output } from 'node:process';
 const rl = readline.createInterface({ input, output })
 
 function checkoddeven(number) {
-    if (number % 2 == 0) {
+    if (number % 2 === 0) {
         return "pair"
     } else {
         return "odd"

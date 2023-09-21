@@ -3,6 +3,9 @@ import { stdin as input, stdout as output } from 'node:process';
 const rl = readline.createInterface({ input, output })
 
 function Palindromo(texto) {
+
+    const splitado =  texto.split(' ').reverse().join('-')
+    console.log(splitado) 
     // Verifique se o texto é igual ao seu inverso
     return texto === texto.split('').reverse().join('');
 }
@@ -15,3 +18,4 @@ rl.close()
 // Um palíndromo é uma palavra, frase ou qualquer outra sequência de unidades que tenha a
 // propriedade de poder ser lida tanto da direita para a esquerda como da esquerda para a direita.
 
+//exemplos: "arara", 

@@ -2,7 +2,7 @@ function quickSort(arr) {
     if (arr.length <= 1) {
         return arr;
     }
-
+    
     const pivot = arr[0]; // Escolhe um pivô (geralmente o primeiro elemento)
     const left = [];
     const right = [];
@@ -19,7 +19,7 @@ function quickSort(arr) {
 }
 
 // Exemplo de uso:
-const array = [6, 3, 9, 1, 2, 7];
+const array = [6, 6, 3, 9, 4, 1, 2, 7]; 
 const sortedArray = quickSort(array);
 console.log(sortedArray);
 

@@ -10,10 +10,10 @@ function fibonacci(n) {
     fibNumbers.push(nextFib);
   }
 
-  return fibNumbers.slice(0, n);
+  return fibNumbers;
 }
 
-const Fib= await rl.question("add the number: \n")
-console.log(fibonacci(Fib));
+const fib = await rl.question("add the number: \n")
+console.log(fibonacci(fib));
 
 rl.close()

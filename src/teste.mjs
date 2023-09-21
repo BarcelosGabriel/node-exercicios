@@ -1,3 +1,7 @@
+import * as readline from 'node:readline/promises';
+import { stdin as input, stdout as output } from 'node:process';
+const rl = readline.createInterface({ input, output })
+
 function bubbleSort(lista) {
     // calculando o comprimento da lista e armazenando na variavel "compr".
     const compr = lista.length;
@@ -20,9 +24,15 @@ function bubbleSort(lista) {
         }
     }
 }
-const minhaLista = [6, 3, 9, 1, 2, 7];
+let n1 = parseFloat(await rl.question("Insira o primeiro numero: \n"));
+let n2 = parseFloat(await rl.question("Insira o segundo numero: \n"));
+let n3 = parseFloat(await rl.question("Insira o segundo numero: \n"));
+let n4 = parseFloat(await rl.question("Insira o segundo numero: \n"));
+let n5 = parseFloat(await rl.question("Insira o segundo numero: \n"));
+let n6 = parseFloat(await rl.question("Insira o segundo numero: \n"));
+
+const minhaLista = [n1,n2,n3,n4,n5,n6];
 bubbleSort(minhaLista);
 console.log("Lista ordenada:", minhaLista);
 
-// Bubble Sort é um algoritmo de ordenação que pode ser aplicado em Arrays e Listas dinâmicas
-// Bubble Sort is a sorting algorithm that can be applied to Arrays and Dynamic Lists
+rl.close()
