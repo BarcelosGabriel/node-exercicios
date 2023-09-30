@@ -16,8 +16,8 @@ function shuffle(array) {
   // Embaralhar o array
   shuffle(numeros);
 
-function quicksort(array) {
-    if (array.length === 0) return []
+function quicksort(array) { //array = []
+    if (!array.length) return []
     if (array.length === 1) return array
 
     const pivot = array[Math.floor(Math.random() * array.length)]
@@ -32,8 +32,11 @@ function quicksort(array) {
 }
 
 const array = [6, 2, 7, 9, 4, 1, 8, 5, 3]
+
+console.time("test_timer");
 const quicksortlist = quicksort(numeros)
-console.log(numeros)
+console.timeEnd("test_timer");
+console.log(quicksortlist)
 
 // Crie um array de arrays para representar os dados no formato CSV
 const data = quicksortlist.map(number => [number])
@@ -41,11 +44,3 @@ const data = quicksortlist.map(number => [number])
 // Crie um arquivo CSV e escreva os dados
 const csvData = data.map(row => row.join('')).join('\n')
 fs.promises.writeFile('list.csv', csvData)
-
-// [6,2,7,9,4,1,8,5,3]
-
-// pivo -> 9
-
-// [2,4,1,5,3] < pivo(6)
-// [6] === pivo(6)
-// [7,9,8] > pivo(6)
